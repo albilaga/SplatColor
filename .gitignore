@@ -39,3 +39,6 @@ Thumbs.db
 
 # dotCover
 *.dotCover
+.mfractor/.031c1ca4-0e62-44df-a005-5e2e2012114f.db
+
+\.mfractor/

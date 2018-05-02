@@ -42,12 +42,11 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SplatColor\SplatColor.csproj">
-      <Project>{28E79188-AF90-40DF-9EB6-D8B1D10B5877}</Project>
-      <Name>SplatColor</Name>
-    </ProjectReference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.4.0.0\lib\monoandroid70\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop" />
+    <Reference Include="System.Runtime" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -58,6 +57,7 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -67,6 +67,12 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SplatColor\SplatColor.csproj">
+      <Project>{C7956501-59F5-49CE-A239-0C1BA8AD6A26}</Project>
+      <Name>SplatColor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

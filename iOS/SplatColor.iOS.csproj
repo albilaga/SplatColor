@@ -81,12 +81,10 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SplatColor\SplatColor.csproj">
-      <Project>{28E79188-AF90-40DF-9EB6-D8B1D10B5877}</Project>
-      <Name>SplatColor</Name>
-    </ProjectReference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.4.0.0\lib\xamarinios10\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -102,6 +100,7 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -110,6 +109,12 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SplatColor\SplatColor.csproj">
+      <Project>{C7956501-59F5-49CE-A239-0C1BA8AD6A26}</Project>
+      <Name>SplatColor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

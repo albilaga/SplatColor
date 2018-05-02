@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Splat;
 
 namespace SplatColor.Droid
 {
@@ -19,7 +20,7 @@ namespace SplatColor.Droid
 			// Get our button from the layout resource,
 			// and attach an event to it
 			Button button = FindViewById<Button>(Resource.Id.myButton);
-
+			button.TextColors = Constant.WhiteColor.ToNative();
 			button.Click += delegate { button.Text = $"{count++} clicks!"; };
 		}
 	}

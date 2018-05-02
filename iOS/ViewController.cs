@@ -18,6 +18,7 @@ namespace SplatColor.iOS
 
 			// Perform any additional setup after loading the view, typically from a nib.
 			Button.AccessibilityIdentifier = "myButton";
+			Button.BackgroundColor = Constant.WhiteColor.ToNative();
 			Button.TouchUpInside += delegate
 			{
 				var title = string.Format("{0} clicks!", count++);
